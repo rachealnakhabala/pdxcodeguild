@@ -1,4 +1,4 @@
-
+import random
 #Twinkle, twinkle, little star,
 #How I wonder what you are!
 #Up above the world so high,
@@ -26,8 +26,7 @@ user_input_list = user_input.split()
 print(len(user_input_list))
 print(f"twinkle, twinkle,{user_input_list[0]} star, how I {user_input_list[1]} what you are! Up above the {user_input_list[2]} so {user_input_list[3]} like a {user_input_list[4]}in the. Twinkle twinkle little start, how I wonder what you are")
 
-# user_input = input('do you want to continue?: ')
-
-# while (user_input == 'yes'):
-#     print('continuing...')
-#     user_input = input('do you want to continue?: ')
+word = ""
+for i in range():
+    word += random.choice()
+    print(word)
