@@ -7,26 +7,29 @@
 
 # We'll use this code in another exercise.
 
-def convert_to_c(temp_input):
+temp_input = temp_input = float(input('enter a temperature: '))
+unit = input('enter a unit: ')
+convert_to_unit = input('enter a unit to convert to: ')
+converted_temp = ""
+
+
+def convert_to_c():
     return ((9 / 5) * temp_input) + 32
+convert_to_c()
 
-def convert_to_f(temp_input): 
-    return round(5 / 9) * (temp_input - 32)
+def convert_to_f():
+    return (5 / 9) * (temp_input - 32)
+convert_to_f()
 
-
-
-
-def main(temp_input, convert_to_unit) :
-  float(input('enter a temperature: '))
-  input('enter a unit: ')
-  input('enter a unit to convert to: ')
+def main():
 
   if convert_to_unit in ('c', 'C'):
-    converted_temp = convert_to_f(temp_input)
-
+    converted_temp = convert_to_f()
+    print(converted_temp, "C")
   elif convert_to_unit in ('f', 'F'):
-    converted_temp = convert_to_c(temp_input)
+    converted_temp = convert_to_c()
+    print(converted_temp, "F")
   else:
-    'no temp entered'
-  
-  print(converted_temp)
+    print('no temp entered')
+main()
+print(converted_temp)
