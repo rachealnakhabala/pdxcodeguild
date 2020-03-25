@@ -1,32 +1,25 @@
-import random
-#Twinkle, twinkle, little star,
-#How I wonder what you are!
-#Up above the world so high,
-#Like a diamond in the sky.
-
-
-
-# little = input("Enter adjective:")
-# wonder = input("Enter verb:")
-# world = input("Enter noun:")
-# high = input("Enter adjective:")
-# diamond = input("Enter noun:")
-# sky =input("Enter noun:")
-
-# print(f"twinkle, twinkle,{little} star, how I {wonder} what you are! Up above the {world} so {high} like a {diamond}in the {sky}. Twinkle twinkle little start, how I wonder what you are")
-
-# list1 = []
-
-user_input = input('enter a plural noun, an adjective, a verb, a noun, and another adjective:' )
-# list1 = user_input.append(user_input)
-
-# print(f"twinkle, twinkle,{little} star, how I {wonder} what you are! Up above the {world} so {high} like a {diamond}in the {sky}. Twinkle twinkle little start, how I wonder what you are")
-
-user_input_list = user_input.split()
-print(len(user_input_list))
-print(f"twinkle, twinkle,{user_input_list[0]} star, how I {user_input_list[1]} what you are! Up above the {user_input_list[2]} so {user_input_list[3]} like a {user_input_list[4]}in the. Twinkle twinkle little start, how I wonder what you are")
-
-word = ""
-for i in range():
-    word += random.choice()
-    print(word)
+# lab2
+"""
+instructions
+Search the interwebs for an example Mad Lib
+Create a new file and save it as madlib.py
+Ask the user for each word you'll put in your Mad Lib
+Use an fstring to put each word into the Mad Lib
+"""
+"""
+The wheels on the bus go round and round
+Round and round
+Round and round
+The wheels on the bus go round and round
+All through the town
+"""
+adjective = input("Enter an adjective: ")
+noun = input("Enter a noun: ")
+verb = input("Enter a verb: ")
+# There was a farmer who had {noun},
+# And Bingo was his name-o.
+# B-I-N-G-O
+# And Bingo was his name-o.
+# There was a farmer who had a dog,
+# And Bingo was his name-o.
+print(f"There was a farmer who {verb}, {adjective},And {noun} was his name-o.")
