@@ -64,3 +64,27 @@ def Words(n):
  elif n >= 100 and n <= 999:
     return Words(n//100) + " Hundred " + (Words(n % 100) if n % 100 !=0 else "")
 print(Words(n))
+
+
+
+
+
+
+
+
+
+# pt 3 
+
+num_map = [(900, 'CM'), (500, 'D'), (400, 'CD'), (100, 'C'), (90, 'XC'),
+           (50, 'L'), (40, 'XL'), (10, 'X'), (9, 'IX'), (5, 'V'), (4, 'IV'), (1, 'I')]
+
+num = int(input("Enter a number : "))
+def n_roman(num):
+    roman = ""
+    while num > 0:
+        for i, r in num_map:
+            while num >= i:
+                roman += r
+                num -= i
+    return roman
+print(n_roman(num))
