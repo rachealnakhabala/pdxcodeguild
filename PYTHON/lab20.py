@@ -20,16 +20,16 @@
 
 credit_card_digits = [5,1,7,8,0,5,9,4,2,9,4,4,7,9,7,3]
 
-# def input():
-# x = list(int(input("Enter the card number: "))
-#     firsthalf= list()
-#     sechalf= list()
-# for i in x:
-#     x = int(input())
-#     if i<9:
-#         firsthalf.append(x)
-#     else: 
-#         sechalf.append(x)
+# # def input():
+# # x = list(int(input("Enter the card number: "))
+# #     firsthalf= list()
+# #     sechalf= list()
+# # for i in x:
+# #     x = int(input())
+# #     if i<9:
+# #         firsthalf.append(x)
+# #     else: 
+# #         sechalf.append(x)
 
 def get_digit_dict():
     credit_card_digits = [5,1,7,8,0,5,9,4,2,9,4,4,7,9,7,3]
